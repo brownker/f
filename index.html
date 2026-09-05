@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday - Shauqina Nur Azzahra</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1e293b}
+body{background:linear-gradient(135deg,#e0f2fe 0%,#f0f9ff 40%,#e0e7ff 100%)}
+.page{min-height:100vh;position:relative;overflow:hidden}
+.decor{position:absolute;inset:0;pointer-events:none}
+.balloon{position:absolute;width:70px;height:88px;border-radius:50%;opacity:.5}
+.balloon:after{content:"";position:absolute;left:50%;top:84px;height:90px;border-left:1px solid #94a3b8}
+.b1{left:6%;top:8%;background:#38bdf8}.b2{right:8%;top:12%;background:#818cf8}.b3{right:15%;bottom:6%;width:50px;height:65px;background:#f59e0b}
+.center{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{width:min(680px,100%);text-align:center;padding:48px 28px;border-radius:24px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);box-shadow:0 20px 45px rgba(15,23,42,.08);border:1px solid rgba(255,255,255,.6)}
+.subtext{font-size:18px;color:#0284c7;font-weight:700;margin-top:8px;margin-bottom:28px}
+h1{font-size:clamp(32px,7vw,58px);line-height:1.15;color:#0f172a;margin:0;font-weight:800;letter-spacing:-0.5px}
+.open-btn{border:0;border-radius:999px;padding:16px 36px;background:linear-gradient(135deg,#0284c7,#4f46e5);color:#fff;font-weight:700;font-size:17px;cursor:pointer;box-shadow:0 10px 25px rgba(2,132,199,.3);transition:all 0.2s ease}
+.open-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(2,132,199,.4)}
+.open-btn:active{transform:scale(.98)}
+#birthday{display:none;padding:45px 18px 65px}
+.wrap{width:min(720px,100%);margin:auto}
+.heading{text-align:center;margin-bottom:28px}
+.heading h2{font-size:clamp(36px,6vw,54px);color:#0f172a;margin:0 0 8px;font-weight:800;letter-spacing:-0.5px}
+.heading p{margin:0;color:#0284c7;font-weight:700;font-size:18px;letter-spacing:1px}
+.panel{background:rgba(255,255,255,.88);border-radius:22px;padding:24px;box-shadow:0 12px 35px rgba(15,23,42,.06);border:1px solid rgba(255,255,255,.6)}
+.message{padding:16px 20px;border-radius:14px;margin-bottom:12px;background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #0284c7}
+.message:nth-child(2){border-left-color:#6366f1}.message:nth-child(3){border-left-color:#f59e0b}.message:nth-child(4){border-left-color:#10b981}.message:nth-child(5){border-left-color:#ec4899}
+.message b{display:block;font-size:15px;margin-bottom:4px;color:#0f172a}
+.message p{margin:0;font-size:16px;line-height:1.4;color:#334155;font-weight:600}
+.closing{text-align:center;margin-top:22px;padding:26px;background:rgba(255,255,255,.88);border-radius:22px;box-shadow:0 12px 35px rgba(15,23,42,.06);border:1px solid rgba(255,255,255,.6)}
+.closing p{margin:0;color:#334155;font-size:18px;line-height:1.6;font-weight:600}
+.footer{text-align:center;margin-top:18px;font-size:13px;color:#94a3b8}
+
+/* Party Confetti Animation */
+.confetti-piece {
+  position: fixed;
+  width: 10px;
+  height: 16px;
+  top: -20px;
+  z-index: 99;
+  opacity: 0.9;
+  animation: fall 3.5s linear forwards;
+  pointer-events: none;
+}
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="decor">
+<div class="balloon b1"></div><div class="balloon b2"></div><div class="balloon b3"></div>
+</div>
+
+<section id="opening" class="center">
+<div class="card">
+<h1>Shauqina Nur Azzahra</h1>
+<div class="subtext">Ada pesan untukmu ✨</div>
+<button type="button" class="open-btn" id="openButton">🎁 Buka Sekarang</button>
+</div>
+</section>
+
+<section id="birthday">
+<div class="wrap">
+<div class="heading">
+<h2>Happy 20th Birthday! 🎉</h2>
+<p>5 SEPTEMBER</p>
+</div>
+
+<div class="panel">
+<div class="message"><b>🇮🇹 Italiano</b><p>Buon compleanno!</p></div>
+<div class="message"><b>🇪🇸 Español</b><p>¡Feliz cumpleaños!</p></div>
+<div class="message"><b>🇸🇦 العربية</b><p dir="rtl">عيد ميلاد سعيد!</p></div>
+<div class="message"><b>🇬🇧 English</b><p>Happy birthday!</p></div>
+<div class="message"><b>🇷🇺 Русский</b><p>С днем рождения!</p></div>
+</div>
+
+<div class="closing">
+<p>Gak ada doa , ko keknya dh cukup banyak dapat doa</p>
+<div style="font-size:22px;margin-top:14px">🎈 ✨ 🎉 🎂 ✨ 🎈</div>
+</div>
+<div class="footer">Dibuat dengan tulus untuk hari spesialmu.</div>
+</div>
+</section>
+</div>
+
+<script>
+(function(){
+  const opening=document.getElementById('opening');
+  const birthday=document.getElementById('birthday');
+  const button=document.getElementById('openButton');
+
+  button.addEventListener('click',function(){
+    opening.style.display='none';
+    birthday.style.display='block';
+    window.scrollTo(0,0);
+    makePartyConfetti();
+  });
+
+  function makePartyConfetti(){
+    const colors=['#0284c7','#6366f1','#f59e0b','#10b981','#ec4899','#38bdf8'];
+    for(let i=0;i<70;i++){
+      const c=document.createElement('div');
+      c.className='confetti-piece';
+      c.style.backgroundColor=colors[Math.floor(Math.random()*colors.length)];
+      c.style.left=Math.random()*100+'vw';
+      c.style.animationDelay=(Math.random()*1.5)+'s';
+      c.style.width=(Math.random()*6+8)+'px';
+      c.style.height=(Math.random()*10+10)+'px';
+      c.style.borderRadius=(Math.random() > 0.5 ? '50%' : '2px');
+      document.body.appendChild(c);
+      setTimeout(()=>c.remove(),5000);
+    }
+  }
+})();
+</script>
+</body>
+</html>
